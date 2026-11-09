@@ -1,0 +1,61 @@
+{
+  "train": {
+    "rows": 24720,
+    "engines": 100,
+    "columns": 27,
+    "missing_values": 0,
+    "duplicate_rows": 0,
+    "constant_columns": [
+      "op3",
+      "s1",
+      "s5",
+      "s16",
+      "s18",
+      "s19"
+    ],
+    "engine_life_min": 145,
+    "engine_life_mean": 247.2,
+    "engine_life_max": 525,
+    "outliers_3xIQR_per_column": {
+      "s2": 1,
+      "s6": 49,
+      "s7": 787,
+      "s8": 554,
+      "s9": 347,
+      "s10": 2906,
+      "s12": 887,
+      "s13": 657,
+      "s14": 342
+    },
+    "cycles_are_consecutive": true
+  },
+  "test": {
+    "rows": 16596,
+    "engines": 100,
+    "columns": 26,
+    "missing_values": 0,
+    "duplicate_rows": 0,
+    "constant_columns": [
+      "op3",
+      "s1",
+      "s5",
+      "s16",
+      "s18",
+      "s19"
+    ],
+    "engine_life_min": 38,
+    "engine_life_mean": 166.0,
+    "engine_life_max": 475,
+    "outliers_3xIQR_per_column": {
+      "s7": 416,
+      "s8": 638,
+      "s9": 117,
+      "s10": 781,
+      "s12": 489,
+      "s13": 628,
+      "s14": 108,
+      "s15": 1
+    },
+    "cycles_are_consecutive": true
+  }
+}

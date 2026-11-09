@@ -1,0 +1,101 @@
+{
+  "subset": "FD002",
+  "conditions": 6,
+  "fault_modes": "HPC degradation",
+  "train_engines": 260,
+  "test_engines": 259,
+  "train_rows": 53759,
+  "test_rows": 33991,
+  "n_features": 61,
+  "sensors_kept": [
+    "s2",
+    "s3",
+    "s4",
+    "s6",
+    "s7",
+    "s8",
+    "s9",
+    "s11",
+    "s12",
+    "s13",
+    "s14",
+    "s15",
+    "s17",
+    "s20",
+    "s21"
+  ],
+  "sensors_dropped_constant": [
+    "s1",
+    "s5",
+    "s10",
+    "s16",
+    "s18",
+    "s19"
+  ],
+  "sensors_dropped_weak": [],
+  "best_model": "Stacking (RF+HGB+Ridge)",
+  "best_tree_model_for_shap": "Random Forest (tuned)",
+  "validation_best": {
+    "model": "Stacking (RF+HGB+Ridge)",
+    "family": "stacking",
+    "tuned": false,
+    "MAE": 10.886158417267795,
+    "RMSE": 15.865578433484457,
+    "R2": 0.8558157137453151,
+    "fit_seconds": 100.6
+  },
+  "test_best": {
+    "model": "Stacking (RF+HGB+Ridge)",
+    "family": "stacking",
+    "tuned": false,
+    "official_MAE": 19.149087058540832,
+    "official_RMSE": 27.287767933572006,
+    "official_R2": 0.742537545448319,
+    "official_NASA_score": 9306.299105943883,
+    "last_cycle_RMSE_vs_capped_RUL": 15.492050968848304,
+    "all_cycles_MAE": 10.715421827140995,
+    "all_cycles_RMSE": 16.220790230413762,
+    "all_cycles_R2": 0.6833711855595834
+  },
+  "residual_interval": {
+    "low": -25.12869326998525,
+    "high": 12.103945869112714,
+    "coverage": 0.8
+  },
+  "classification": {
+    "best_model": "Random Forest",
+    "threshold_cycles": 30,
+    "positive_rate_train": 0.14992838408452538,
+    "validation": {
+      "model": "Random Forest",
+      "Accuracy": 0.9625060709082078,
+      "Precision": 0.8584795321637427,
+      "Recall": 0.9106699751861043,
+      "F1": 0.8838049367850692,
+      "ROC_AUC": 0.9917142221088011,
+      "TN": 8441,
+      "FP": 242,
+      "FN": 144,
+      "TP": 1468,
+      "fit_seconds": 38.0
+    },
+    "test_all_cycles": {
+      "model": "Random Forest",
+      "evaluation": "all test cycles",
+      "n": 33991,
+      "positives": 1087,
+      "Accuracy": 0.97887676149569,
+      "Precision": 0.6205094709340301,
+      "Recall": 0.8739650413983441,
+      "F1": 0.7257448433919023,
+      "ROC_AUC": 0.989487147355827,
+      "TN": 32323,
+      "FP": 581,
+      "FN": 137,
+      "TP": 950
+    }
+  },
+  "rul_cap": 125,
+  "fault_threshold": 30,
+  "total_minutes": 24.0
+}

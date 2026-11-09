@@ -1,0 +1,101 @@
+{
+  "subset": "FD004",
+  "conditions": 6,
+  "fault_modes": "HPC degradation + Fan degradation",
+  "train_engines": 249,
+  "test_engines": 248,
+  "train_rows": 61249,
+  "test_rows": 41214,
+  "n_features": 65,
+  "sensors_kept": [
+    "s2",
+    "s3",
+    "s4",
+    "s6",
+    "s7",
+    "s8",
+    "s9",
+    "s10",
+    "s11",
+    "s12",
+    "s13",
+    "s14",
+    "s15",
+    "s17",
+    "s20",
+    "s21"
+  ],
+  "sensors_dropped_constant": [
+    "s1",
+    "s5",
+    "s16",
+    "s18",
+    "s19"
+  ],
+  "sensors_dropped_weak": [],
+  "best_model": "Stacking (RF+HGB+Ridge)",
+  "best_tree_model_for_shap": "HistGradientBoosting (tuned)",
+  "validation_best": {
+    "model": "Stacking (RF+HGB+Ridge)",
+    "family": "stacking",
+    "tuned": false,
+    "MAE": 12.56506092899945,
+    "RMSE": 19.0327950810181,
+    "R2": 0.7831978056771692,
+    "fit_seconds": 106.1
+  },
+  "test_best": {
+    "model": "Stacking (RF+HGB+Ridge)",
+    "family": "stacking",
+    "tuned": false,
+    "official_MAE": 20.978177434716052,
+    "official_RMSE": 28.44214314757591,
+    "official_R2": 0.7278849816397832,
+    "official_NASA_score": 5784.335589477825,
+    "last_cycle_RMSE_vs_capped_RUL": 17.231620413037728,
+    "all_cycles_MAE": 8.71742000396719,
+    "all_cycles_RMSE": 14.576880614701132,
+    "all_cycles_R2": 0.6722991201789497
+  },
+  "residual_interval": {
+    "low": -20.17687138718562,
+    "high": 25.9596019302236,
+    "coverage": 0.8
+  },
+  "classification": {
+    "best_model": "HistGradientBoosting",
+    "threshold_cycles": 30,
+    "positive_rate_train": 0.126026547372202,
+    "validation": {
+      "model": "HistGradientBoosting",
+      "Accuracy": 0.9554161438728566,
+      "Precision": 0.7804743519029234,
+      "Recall": 0.9129032258064517,
+      "F1": 0.8415105560511448,
+      "ROC_AUC": 0.9881910371874563,
+      "TN": 10007,
+      "FP": 398,
+      "FN": 135,
+      "TP": 1415,
+      "fit_seconds": 13.1
+    },
+    "test_all_cycles": {
+      "model": "HistGradientBoosting",
+      "evaluation": "all test cycles",
+      "n": 41214,
+      "positives": 864,
+      "Accuracy": 0.9870917649342457,
+      "Precision": 0.6599229287090559,
+      "Recall": 0.7928240740740741,
+      "F1": 0.7202944269190326,
+      "ROC_AUC": 0.9942306897976043,
+      "TN": 39997,
+      "FP": 353,
+      "FN": 179,
+      "TP": 685
+    }
+  },
+  "rul_cap": 125,
+  "fault_threshold": 30,
+  "total_minutes": 28.3
+}

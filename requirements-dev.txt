@@ -1,0 +1,5 @@
+# Extra tools for development only (not needed for deployment)
+-r requirements.txt
+pytest==9.1.1
+ipykernel
+nbformat

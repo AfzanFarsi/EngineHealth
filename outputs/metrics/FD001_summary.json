@@ -1,0 +1,101 @@
+{
+  "subset": "FD001",
+  "conditions": 1,
+  "fault_modes": "HPC degradation",
+  "train_engines": 100,
+  "test_engines": 100,
+  "train_rows": 20631,
+  "test_rows": 13096,
+  "n_features": 57,
+  "sensors_kept": [
+    "s2",
+    "s3",
+    "s4",
+    "s7",
+    "s8",
+    "s9",
+    "s11",
+    "s12",
+    "s13",
+    "s14",
+    "s15",
+    "s17",
+    "s20",
+    "s21"
+  ],
+  "sensors_dropped_constant": [
+    "s1",
+    "s5",
+    "s6",
+    "s10",
+    "s16",
+    "s18",
+    "s19"
+  ],
+  "sensors_dropped_weak": [],
+  "best_model": "Random Forest (tuned)",
+  "best_tree_model_for_shap": "Random Forest (tuned)",
+  "validation_best": {
+    "model": "Random Forest (tuned)",
+    "family": "bagging",
+    "tuned": true,
+    "MAE": 9.802782527173102,
+    "RMSE": 14.5144914002703,
+    "R2": 0.8789386690071062,
+    "fit_seconds": 6.9
+  },
+  "test_best": {
+    "model": "Random Forest (tuned)",
+    "family": "bagging",
+    "tuned": true,
+    "official_MAE": 13.534959171540867,
+    "official_RMSE": 18.63104615471079,
+    "official_R2": 0.7989912609388898,
+    "official_NASA_score": 667.7444556808745,
+    "last_cycle_RMSE_vs_capped_RUL": 17.4684743615156,
+    "all_cycles_MAE": 10.196323669538325,
+    "all_cycles_RMSE": 15.88707702234671,
+    "all_cycles_R2": 0.6681632193921111
+  },
+  "residual_interval": {
+    "low": -22.209786225526162,
+    "high": 13.981731462279315,
+    "coverage": 0.8
+  },
+  "classification": {
+    "best_model": "SVM (RBF)",
+    "threshold_cycles": 30,
+    "positive_rate_train": 0.15025931850128446,
+    "validation": {
+      "model": "SVM (RBF)",
+      "Accuracy": 0.9616707616707617,
+      "Precision": 0.8452380952380952,
+      "Recall": 0.9161290322580645,
+      "F1": 0.8792569659442725,
+      "ROC_AUC": 0.9900705937353904,
+      "TN": 3346,
+      "FP": 104,
+      "FN": 52,
+      "TP": 568,
+      "fit_seconds": 0.3
+    },
+    "test_all_cycles": {
+      "model": "SVM (RBF)",
+      "evaluation": "all test cycles",
+      "n": 13096,
+      "positives": 332,
+      "Accuracy": 0.9851863164324984,
+      "Precision": 0.6949152542372882,
+      "Recall": 0.7409638554216867,
+      "F1": 0.717201166180758,
+      "ROC_AUC": 0.9852805140964987,
+      "TN": 12656,
+      "FP": 108,
+      "FN": 86,
+      "TP": 246
+    }
+  },
+  "rul_cap": 125,
+  "fault_threshold": 30,
+  "total_minutes": 7.4
+}

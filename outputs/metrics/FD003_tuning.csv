@@ -1,0 +1,6 @@
+model,method,best_params,cv_rmse_train_engines,val_rmse_default,val_rmse_tuned,search_seconds
+Ridge,GridSearchCV,"{""model__alpha"": 1000}",19.041,17.851,17.886,0.5
+Decision Tree,GridSearchCV,"{""max_depth"": 6, ""min_samples_leaf"": 50}",17.502,16.211,16.399,14.5
+SVR (RBF),GridSearchCV,"{""estimator__model__C"": 50, ""estimator__model__gamma"": 0.01}",16.391,13.905,13.978,121.5
+HistGradientBoosting,RandomizedSearchCV,"{""min_samples_leaf"": 20, ""max_leaf_nodes"": 15, ""max_iter"": 150, ""learning_rate"": 0.03, ""l2_regularization"": 1.0}",15.53,12.919,12.759,43.4
+Random Forest,RandomizedSearchCV,"{""min_samples_leaf"": 5, ""max_features"": 0.3, ""max_depth"": 14}",15.367,12.7,13.048,44.4

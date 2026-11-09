@@ -1,0 +1,52 @@
+{
+  "subset": "FD002",
+  "engine": 54,
+  "sensor": "s11",
+  "sensor_description": "Ps30 - Static pressure at HPC outlet",
+  "n_cycles": 199,
+  "interval": "regular: exactly one observation per operating cycle (no gaps)",
+  "variables": "univariate view = 1 sensor; multivariate view = 15 sensors + 3 settings",
+  "adf_pvalue_raw": 4.601335519222244e-08,
+  "adf_pvalue_raw_first_difference": 6.393048483702877e-11,
+  "stationary_raw": true,
+  "adf_pvalue_condition_normalised": 0.998785656235752,
+  "adf_pvalue_condition_normalised_first_difference": 6.4797415179893596e-15,
+  "stationary_condition_normalised": false,
+  "seasonality_check": {
+    "strongest_lag_in_differenced_series": 24,
+    "abs_acf_at_that_lag": 0.27199604957823015,
+    "95pct_band": 0.15592922769844308,
+    "seasonal_pattern_present": false
+  },
+  "forecast_rmse_normalised_units": {
+    "Naive (last value)": 0.9002763941357598,
+    "Moving average (10)": 0.8301617939966464,
+    "AR(2) + trend": 0.8375621377192629,
+    "MA(2) + trend": 0.8299734421489678,
+    "ARIMA(1,1,1) + drift": 0.7277488426822417,
+    "SARIMA(1,1,1)(1,0,1,24)": 0.516104997614351
+  },
+  "aic": {
+    "AR(2) + trend": 196.51536335920892,
+    "MA(2) + trend": 199.79529605416218,
+    "ARIMA(1,1,1) + drift": 201.11085232253794,
+    "SARIMA(1,1,1)(1,0,1,24)": 211.43016775810747
+  },
+  "holdout_cycles": 40,
+  "rul_baseline_comparison": {
+    "failure_level_health_indicator": 1.3506189665737036,
+    "arima_health_indicator": {
+      "MAE": 33.181467181467184,
+      "RMSE": 40.02315931874047,
+      "R2": 0.44613921780020627,
+      "NASA_score": 127357.17107490973
+    },
+    "supervised_best_model": {
+      "name": "Stacking (RF+HGB+Ridge)",
+      "MAE": 19.149087058540832,
+      "RMSE": 27.287767933572006,
+      "R2": 0.742537545448319,
+      "NASA_score": 9306.299105943883
+    }
+  }
+}

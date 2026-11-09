@@ -1,0 +1,22 @@
+sensor,description,spearman_with_rul,status
+s1,T2 - Total temperature at fan inlet,,dropped: constant
+s2,T24 - Total temperature at LPC outlet,-0.5871013168368072,kept
+s3,T30 - Total temperature at HPC outlet,-0.5757967172860111,kept
+s4,T50 - Total temperature at LPT outlet,-0.6805287775893067,kept
+s5,P2 - Pressure at fan inlet,,dropped: constant
+s6,P15 - Total pressure in bypass duct,-0.3516833380641405,kept
+s7,P30 - Total pressure at HPC outlet,0.4754345080150666,kept
+s8,Nf - Physical fan speed,-0.38984009288668703,kept
+s9,Nc - Physical core speed,-0.30221927475814253,kept
+s10,epr - Engine pressure ratio,,dropped: constant
+s11,Ps30 - Static pressure at HPC outlet,-0.7114596875010243,kept
+s12,phi - Ratio of fuel flow to Ps30,0.5017306351195544,kept
+s13,NRf - Corrected fan speed,-0.3893539567807009,kept
+s14,NRc - Corrected core speed,-0.17345152885382958,kept
+s15,BPR - Bypass ratio,-0.6734971442851756,kept
+s16,farB - Burner fuel-air ratio,,dropped: constant
+s17,htBleed - Bleed enthalpy,-0.5997152065684267,kept
+s18,Nf_dmd - Demanded fan speed,,dropped: constant
+s19,PCNfR_dmd - Demanded corrected fan speed,,dropped: constant
+s20,W31 - HPT coolant bleed,0.4497238052706477,kept
+s21,W32 - LPT coolant bleed,0.44758157341030697,kept

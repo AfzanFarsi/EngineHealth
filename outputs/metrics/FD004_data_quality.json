@@ -1,0 +1,38 @@
+{
+  "train": {
+    "rows": 61249,
+    "engines": 249,
+    "columns": 27,
+    "missing_values": 0,
+    "duplicate_rows": 0,
+    "constant_columns": [],
+    "engine_life_min": 128,
+    "engine_life_mean": 246.0,
+    "engine_life_max": 543,
+    "outliers_3xIQR_per_column": {
+      "op3": 9139,
+      "s13": 9445,
+      "s14": 731,
+      "s19": 9139
+    },
+    "cycles_are_consecutive": true
+  },
+  "test": {
+    "rows": 41214,
+    "engines": 248,
+    "columns": 26,
+    "missing_values": 0,
+    "duplicate_rows": 0,
+    "constant_columns": [],
+    "engine_life_min": 19,
+    "engine_life_mean": 166.2,
+    "engine_life_max": 486,
+    "outliers_3xIQR_per_column": {
+      "op3": 6107,
+      "s13": 6166,
+      "s14": 796,
+      "s19": 6107
+    },
+    "cycles_are_consecutive": true
+  }
+}
